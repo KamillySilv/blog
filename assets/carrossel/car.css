@@ -1,0 +1,142 @@
+*, *::before, *::after{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;
+    background-color:  transparent;
+}
+
+body{
+    background-color: transparent;
+}
+
+.wrapper{
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.slide-list{
+    display: flex;
+}
+
+.slide-content{
+    border: 1px solid white;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: #070707 0px 10px 18px;
+}
+.slide-description{
+    background: linear-gradient( to top, #000000, transparent);
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+}
+.slide-description h3{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    position: relative;
+    top: 5px;
+}
+
+.slide-description p{
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.slide-itens{
+    padding: 0 10px;
+    flex-shrink: 0;
+    width: 50vw;
+    cursor: grab;
+}
+
+.slide-itens img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.nav-button{
+    position: absolute;
+    background: transparent;
+    font-size: 36px;
+    color: #ffffff;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.nav-previous{
+    left: 15px;
+}
+
+.nav-next{
+    right: 15px;
+}
+
+.slide-controls{
+    margin: 20px auto 0;
+
+}
+
+.control-button{
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 3px;
+}
+
+.control-button.active{
+    color: #3c4aa5;
+}
+
+.slide-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+
+} 
+
+@media screen and (max-width: 768px) {
+    .slide-description h3{
+        font-size: 24px;
+        top: 0;
+    }
+
+    .slide-description p{
+        display: none;
+    }
+
+    .slide-description{
+        padding: 10px;
+    }
+
+    .control-button{
+        font-size: 11px;
+    }
+
+    .slide-controls{
+        margin: 15px auto 0;
+    }
+    
+    .nav-previous{
+        left: 10px;
+    }
+    
+    .nav-next{
+        right: 10px;
+    }
+
+    .nav-button{
+       margin-top: -20px;
+       font-size: 26px;
+    }
+}

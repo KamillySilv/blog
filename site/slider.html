@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" />
+    <link rel="stylesheet" href="assets/carrossel/car.css">
+    
+</head>
+<body>
+    <div class="wrapper">
+        <div class="slide-wrapper" data-slide="wrapper">
+            <button class="nav-button nav-previous fas fa-chevron-left" data-slide="nav-previous"></button>
+            <button class="nav-button nav-next fas fa-chevron-right" data-slide="nav-next"></button>
+            <div class="slide-list" data-slide="list">
+                <div class="slide-itens" data-slide="itens" data-index="0">
+                    <div class="slide-content">
+                        <img src="assets/carrossel/Howl's Moving Castle.jpg" alt="Castelo Animado">
+                        <div class="slide-description">
+                            <h3>Castelo Animado</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-itens" data-slide="itens" data-index="1">
+                    <div class="slide-content">
+                        <img src="assets/carrossel/iruma-kun.jpg" alt="iruma-kun">
+                        <div class="slide-description">
+                            <h3>Iruma kun</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-itens" data-slide="itens" data-index="2">
+                    <div class="slide-content">
+                        <img src="assets/carrossel/one piece.png" alt="One piece">
+                        <div class="slide-description">
+                            <h3>One Piece</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-itens" data-slide="itens" data-index="3">
+                    <div class="slide-content">
+                        <img src="assets/carrossel/todemo skill.jpg" alt="todemo">
+                        <div class="slide-description">
+                            <h3>Todemo Skill</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="slide-itens" data-slide="itens" data-index="4">
+                    <div class="slide-content">
+                        <img src="assets/carrossel/trigun.jpg" alt="Trigun">
+                        <div class="slide-description">
+                            <h3>Trigun Stampede</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slide-controls" data-slide="controls">
+                
+            </div>
+        </div>
+    </div>
+    <script src="js/slide.js"></script>
+    <script>
+        initSlider({
+            autoPlay: true,
+            startIndex: 0,
+            timeInterval: 3000        
+        })
+
+    </script>
+</body>
+</html>
