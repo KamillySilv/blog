@@ -5,7 +5,6 @@
     box-sizing: border-box;
 }
 html, body {
-    height: 100%;
     background-color:  transparent;
 }
 
@@ -106,6 +105,8 @@ body{
 } 
 
 @media screen and (max-width: 768px) {
+
+    
     .slide-description h3{
         font-size: 24px;
         top: 0;
